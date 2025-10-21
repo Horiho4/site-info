@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://public-frontend-cos.metadl.com/mgx/img/favicon.png" type="image/png">
+    <title>HELLO! - Retro Site 2005</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- Header Banner -->
+    <header class="header">
+        <div class="banner-image"></div>
+        <div class="banner-content">
+            <h1 class="title" onclick="showPage('home')">HELLO!</h1>
+            <p class="subtitle">cr: @pandemocha</p>
+        </div>
+    </header>
+
+    <!-- Social Links Section -->
+    <div class="social-section">
+        <table class="social-table">
+            <tr>
+                <td align="center">
+                    <img src="./public/stamp1.jpg" alt="Stamp 1" class="stamp">
+                    <br>
+                    <a href="https://t.me/plusdiesels" target="_blank" class="social-link">Telegram</a>
+                </td>
+                <td align="center">
+                    <img src="./public/stamp2.jpg" alt="Stamp 2" class="stamp">
+                    <br>
+                    <a href="https://x.com/spicelold" target="_blank" class="social-link">Twitter/X</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navigation">
+        <table class="nav-table">
+            <tr>
+                <td><a href="#" onclick="showPage('home')" class="nav-link active">Главная</a></td>
+                <td><a href="#" onclick="showPage('info')" class="nav-link">Информация</a></td>
+                <td><a href="#" onclick="showPage('music')" class="nav-link">Музыка</a></td>
+                <td><a href="#" onclick="showPage('wiki')" class="nav-link">Игровые статьи</a></td>
+            </tr>
+        </table>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Page -->
+        <div id="home-page" class="page active">
+            <table class="content-table">
+                <tr>
+                    <td colspan="2">
+                        <h2>Добро пожаловать на мой персональный сайт!</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="50%">
+                        <div class="content-box">
+                            <h3>О сайте</h3>
+                            <p>Этот сайт создан в стиле классических веб-страниц 2005-2006 годов. Здесь вы найдете простой и понятный дизайн без лишних украшений.</p>
+                            <p><b>Последнее обновление:</b> 20 октября 2025</p>
+                        </div>
+                    </td>
+                    <td width="50%">
+                        <div class="content-box">
+                            <h3>Разделы сайта</h3>
+                            <ul>
+                                <li><a href="#" onclick="showPage('info')">Информация</a> - подробности о сайте</li>
+                                <li><a href="#" onclick="showPage('music')">Музыка</a> - мой плейлист с реальными треками</li>
+                                <li><a href="#" onclick="showPage('wiki')">Игровые статьи</a> - статьи из Википедии с изображениями</li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Info Page -->
+        <div id="info-page" class="page">
+            <table class="content-table">
+                <tr>
+                    <td>
+                        <h2>Информация о сайте</h2>
+                        
+                        <div class="content-box">
+                            <h3>Технические характеристики</h3>
+                            <table border="1" cellpadding="5" cellspacing="0" class="info-table">
+                                <tr>
+                                    <td><b>Язык разметки:</b></td>
+                                    <td>HTML 4.01</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Стили:</b></td>
+                                    <td>CSS 2.0</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Скрипты:</b></td>
+                                    <td>JavaScript</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Шрифт:</b></td>
+                                    <td>Comic Sans MS</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Разрешение:</b></td>
+                                    <td>Оптимизировано для 1024x768</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Браузер:</b></td>
+                                    <td>Internet Explorer 6+, Firefox 1.5+</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                     
+
+                        <div class="content-box">
+                            <h3>Контакты</h3>
+                            <p><b>Telegram:</b> <a href="https://t.me/plusdiesels" target="_blank">@plusdiesels</a></p>
+                            <p><b>Twitter/X:</b> <a href="https://x.com/spicelold" target="_blank">@spicelold</a></p>
+                            <p><b>Email:</b> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="fa8d9f98979b898e9f88ba9f829b978a969fd4999597">[email&#160;protected]</a></p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Music Page -->
+        <div id="music-page" class="page">
+            <table class="content-table">
+                <tr>
+                    <td>
+                        <h2>Мой музыкальный плейлист</h2>
+                        
+                        <div class="content-box">
+                            <table width="100%">
+                                <tr>
+                                    <td width="200" align="center">
+                                        <div class="cd-player">
+                                            <div class="cd-disc" id="cd-disc">
+                                                <div class="cd-center"></div>
+                                                <div class="cd-label">
+                                                    <span id="cd-text">CD</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="player-info">
+                                            <h3 id="current-song">Выберите трек</h3>
+                                            <p id="current-artist">Исполнитель</p>
+                                            <div class="player-controls">
+                                                <button onclick="previousSong()">◀◀</button>
+                                                <button onclick="togglePlay()" id="play-btn">▶</button>
+                                                <button onclick="nextSong()">▶▶</button>
+                                                <button onclick="stopSong()">⏹</button>
+                                            </div>
+                                            <div class="volume-control">
+                                                <label for="volume">Громкость:</label>
+                                                <input type="range" id="volume" min="0" max="100" value="50" onchange="setVolume(this.value)">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="content-box">
+                            <h3>Список треков</h3>
+                            <table border="1" cellpadding="3" cellspacing="0" width="100%" class="playlist-table">
+                                <tr bgcolor="#E0E0E0">
+                                    <td><b>№</b></td>
+                                    <td><b>Исполнитель</b></td>
+                                    <td><b>Название</b></td>
+                                    <td><b>Действие</b></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Ace of Base</td>
+                                    <td>Happy Nation</td>
+                                    <td><a href="#" onclick="playSong('Happy Nation', 'Ace of Base', './public/music/happy_nation.mp3')">Играть</a></td>
+                                </tr>
+                                <tr bgcolor="#F0F0F0">
+                                    <td>2</td>
+                                    <td>Kylie Minogue</td>
+                                    <td>Can't Get You Out of My Head</td>
+                                    <td><a href="#" onclick="playSong('Can\'t Get You Out of My Head', 'Kylie Minogue', './public/music/cant_get_you_out.mp3')">Играть</a></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Loona</td>
+                                    <td>Vamos a la Playa</td>
+                                    <td><a href="#" onclick="playSong('Vamos a la Playa', 'Loona', './public/music/vamos_a_la_playa.mp3')">Играть</a></td>
+                                </tr>
+                                <tr bgcolor="#F0F0F0">
+                                    <td>4</td>
+                                    <td>Daft Punk</td>
+                                    <td>Get Lucky</td>
+                                    <td><a href="#" onclick="playSong('Get Lucky', 'Daft Punk')">Играть</a></td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>The Weeknd</td>
+                                    <td>Blinding Lights</td>
+                                    <td><a href="#" onclick="playSong('Blinding Lights', 'The Weeknd')">Играть</a></td>
+                                </tr>
+                                <tr bgcolor="#F0F0F0">
+                                    <td>6</td>
+                                    <td>Billie Eilish</td>
+                                    <td>Bad Guy</td>
+                                    <td><a href="#" onclick="playSong('Bad Guy', 'Billie Eilish')">Играть</a></td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>Post Malone</td>
+                                    <td>Circles</td>
+                                    <td><a href="#" onclick="playSong('Circles', 'Post Malone')">Играть</a></td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="content-box">
+                            <h3>Информация о плеере</h3>
+                            <p>🎵 <b>Реальные треки:</b> Ace of Base, Kylie Minogue, Loona</p>
+                            <p>🎧 <b>Виртуальные треки:</b> Остальные песни (эмуляция)</p>
+                            <p>💿 <b>Формат:</b> MP3, совместимо с браузерами 2005 года</p>
+                            <p>🔊 <b>Управление:</b> Воспроизведение, пауза, остановка, громкость</p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Wiki Page -->
+        <div id="wiki-page" class="page">
+            <table class="content-table">
+                <tr>
+                    <td>
+                        <h2>Игровые статьи из Википедии</h2>
+                        
+                        <div class="content-box">
+                            <p>fav Games</p>
+                        </div>
+
+                        <div class="content-box game-article">
+                            <table width="100%">
+                                <tr>
+                                    <td width="200" align="center">
+                                        <div class="game-image">
+                                            <img src="https://upload.wikimedia.org/wikipedia/en/5/53/Hotline_Miami_2_cover.jpg" alt="Hotline Miami 2" class="game-cover">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <h3> Hotline Miami 2: Wrong Number</h3>
+                                        <p><b>Жанр:</b> Экшен, Инди-игра</p>
+                                        <p><b>Разработчик:</b> Dennaton Games</p>
+                                        <p><b>Год выпуска:</b> 2015</p>
+                                        <p>Hotline Miami 2: Wrong Number — компьютерная игра в жанре экшен с видом сверху, разработанная студией Dennaton Games. Является продолжением игры Hotline Miami 2012 года. Игра известна своей жестокостью, неоновой эстетикой и саундтреком в стиле синтвейв.</p>
+                                        <p><a href="https://ru.wikipedia.org/wiki/Hotline_Miami_2:_Wrong_Number" target="_blank">Читать полную статью на Википедии →</a></p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                    
+
+                        <div class="content-box game-article">
+                            <table width="100%">
+                                <tr>
+                                    <td width="200" align="center">
+                                        <div class="game-image">
+                                            <img src="https://upload.wikimedia.org/wikipedia/en/4/42/GTAVC_for_PC_box_art.jpg" alt="GTA Vice City" class="game-cover">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <h3>🏎️ Grand Theft Auto: Vice City</h3>
+                                        <p><b>Жанр:</b> Экшен, Открытый мир</p>
+                                        <p><b>Разработчик:</b> Rockstar North</p>
+                                        <p><b>Год выпуска:</b> 2002</p>
+                                        <p>Grand Theft Auto: Vice City — компьютерная игра в жанре action-adventure с открытым миром, разработанная компанией Rockstar North. Действие игры происходит в 1986 году в вымышленном городе Вайс-Сити, основанном на Майами. Игра известна своей атмосферой 1980-х годов и саундтреком.</p>
+                                        <p><a href="https://ru.wikipedia.org/wiki/Grand_Theft_Auto:_Vice_City" target="_blank">Читать полную статью на Википедии →</a></p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <hr>
+        <p align="center">
+            © 2025 Pandemocha chattova | Cr: Pandemocha Chattova   | 
+            <a href="/cdn-cgi/l/email-protection#2552404748445651405765405d44485549400b464a48">Связаться с веб-мастером</a>
+        </p>
+        <p align="center">
+            <small> Internet Explorer 6.0+ or Firefox 1.5+</small>
+        </p>
+    </footer>
+
+    <!-- Hidden audio element for music playback -->
+    <audio id="audioPlayer" preload="none"></audio>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="./script.js"></script>
+</body>
+
+</html>

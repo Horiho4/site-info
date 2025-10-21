@@ -1,0 +1,522 @@
+/* Retro 2005-2006 Website Styles with Comic Sans and Music Player */
+
+/* Custom cursors */
+* {
+    cursor: url('./public/images/image-removebg-preview-3.png'), auto;
+}
+
+a, button, .nav-link, .title {
+    cursor: url('./public/images/image-removebg-preview-4.png'), pointer;
+}
+
+/* Reset and base styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Comic Sans MS", cursive, Arial, sans-serif;
+    font-size: 13px;
+    background-color: #FFFFFF;
+    color: #000000;
+    line-height: 1.4;
+}
+
+/* Header with background image */
+.header {
+    position: relative;
+    height: 200px;
+    background-image: url('./public/images/gm_construct.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom: 2px solid #000000;
+}
+
+.banner-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.banner-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.title {
+    font-family: "Comic Sans MS", cursive;
+    font-size: 48px;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 4px #000000;
+    margin: 0;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 2px #000000;
+    margin: 10px 0 0 0;
+    font-family: "Comic Sans MS", cursive;
+}
+
+/* Social Links Section */
+.social-section {
+    background-color: #F0F0F0;
+    border-bottom: 1px solid #808080;
+    padding: 10px;
+    text-align: center;
+}
+
+.social-table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.social-table td {
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.stamp {
+    width: 80px;
+    height: 60px;
+    border: 2px solid #808080;
+    margin-bottom: 5px;
+    object-fit: cover;
+}
+
+.social-link {
+    font-family: "Comic Sans MS", cursive;
+    font-weight: bold;
+    text-decoration: none;
+    color: #0000FF;
+    font-size: 14px;
+}
+
+.social-link:hover {
+    color: #FF0000;
+    text-decoration: underline;
+}
+
+/* Navigation */
+.navigation {
+    background-color: #E0E0E0;
+    border-bottom: 1px solid #808080;
+    padding: 5px;
+}
+
+.nav-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.nav-table td {
+    text-align: center;
+    border-right: 1px solid #808080;
+    padding: 8px;
+}
+
+.nav-table td:last-child {
+    border-right: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #0000FF;
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+    padding: 5px 10px;
+    font-family: "Comic Sans MS", cursive;
+}
+
+.nav-link:hover {
+    background-color: #FFFFCC;
+    text-decoration: underline;
+}
+
+.nav-link.active {
+    background-color: #CCCCFF;
+    color: #000080;
+}
+
+/* Main content */
+.main-content {
+    padding: 20px;
+    min-height: 400px;
+}
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+.content-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.content-table td {
+    vertical-align: top;
+    padding: 10px;
+}
+
+/* Content boxes */
+.content-box {
+    border: 1px solid #808080;
+    background-color: #F8F8F8;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.content-box h3 {
+    margin-top: 0;
+    color: #000080;
+    font-size: 16px;
+    border-bottom: 1px solid #CCCCCC;
+    padding-bottom: 5px;
+    font-family: "Comic Sans MS", cursive;
+}
+
+/* Game articles styling */
+.game-article {
+    margin-bottom: 20px;
+}
+
+.game-image {
+    text-align: center;
+    padding: 10px;
+}
+
+.game-cover {
+    width: 150px;
+    height: auto;
+    border: 2px solid #808080;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.game-cover:hover {
+    border-color: #0000FF;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+/* Headings */
+h1, h2 {
+    color: #000080;
+    font-family: "Comic Sans MS", cursive;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #000080;
+    padding-bottom: 5px;
+}
+
+/* Links */
+a {
+    color: #0000FF;
+    text-decoration: underline;
+    font-family: "Comic Sans MS", cursive;
+}
+
+a:visited {
+    color: #800080;
+}
+
+a:hover {
+    color: #FF0000;
+    background-color: #FFFFCC;
+}
+
+/* Tables */
+.info-table, .playlist-table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 12px;
+    font-family: "Comic Sans MS", cursive;
+}
+
+.info-table td, .playlist-table td {
+    border: 1px solid #808080;
+    padding: 4px 8px;
+}
+
+.playlist-table tr:hover {
+    background-color: #FFFFCC;
+}
+
+/* Music player */
+.cd-player {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.cd-disc {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #C0C0C0 0%, #808080 50%, #C0C0C0 100%);
+    border: 3px solid #404040;
+    position: relative;
+    margin: 0 auto;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.cd-disc.spinning {
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.cd-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: #404040;
+    border-radius: 50%;
+    border: 2px solid #808080;
+}
+
+.cd-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000000;
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+    width: 80px;
+    font-family: "Comic Sans MS", cursive;
+}
+
+.player-info {
+    padding: 10px;
+}
+
+.player-info h3 {
+    margin: 0 0 5px 0;
+    color: #000080;
+    font-family: "Comic Sans MS", cursive;
+}
+
+.player-info p {
+    margin: 0 0 10px 0;
+    color: #666666;
+    font-family: "Comic Sans MS", cursive;
+}
+
+.player-controls {
+    margin-bottom: 10px;
+}
+
+.player-controls button {
+    background-color: #E0E0E0;
+    border: 2px outset #E0E0E0;
+    padding: 5px 10px;
+    margin: 0 2px;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: "Comic Sans MS", cursive;
+}
+
+.player-controls button:hover {
+    background-color: #FFFFCC;
+}
+
+.player-controls button:active {
+    border-style: inset;
+}
+
+/* Volume control */
+.volume-control {
+    margin-top: 10px;
+    font-family: "Comic Sans MS", cursive;
+    font-size: 12px;
+}
+
+.volume-control label {
+    display: inline-block;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.volume-control input[type="range"] {
+    width: 100px;
+    vertical-align: middle;
+}
+
+/* Audio player (hidden) */
+#audioPlayer {
+    display: none;
+}
+
+/* Footer */
+.footer {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #F0F0F0;
+    border-top: 1px solid #808080;
+    font-size: 11px;
+    color: #666666;
+    font-family: "Comic Sans MS", cursive;
+}
+
+.footer hr {
+    border: none;
+    border-top: 1px solid #808080;
+    margin-bottom: 10px;
+}
+
+/* Lists */
+ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+li {
+    margin: 5px 0;
+    font-family: "Comic Sans MS", cursive;
+}
+
+/* Form elements */
+button {
+    background-color: #E0E0E0;
+    border: 2px outset #E0E0E0;
+    padding: 3px 8px;
+    font-size: 11px;
+    font-family: "Comic Sans MS", cursive;
+}
+
+button:hover {
+    background-color: #FFFFCC;
+}
+
+button:active {
+    border-style: inset;
+}
+
+input[type="range"] {
+    background-color: #E0E0E0;
+    border: 1px inset #E0E0E0;
+}
+
+/* Text elements */
+p, td, th {
+    font-family: "Comic Sans MS", cursive;
+}
+
+/* Scrollbars (for IE compatibility) */
+body {
+    scrollbar-face-color: #E0E0E0;
+    scrollbar-track-color: #F0F0F0;
+    scrollbar-arrow-color: #808080;
+    scrollbar-shadow-color: #808080;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 800px) {
+    .title {
+        font-size: 32px;
+    }
+    
+    .nav-table td {
+        font-size: 12px;
+        padding: 5px;
+    }
+    
+    .main-content {
+        padding: 10px;
+    }
+    
+    .content-table td {
+        display: block;
+        width: 100%;
+        padding: 5px;
+    }
+    
+    .social-table td {
+        display: block;
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .stamp {
+        width: 60px;
+        height: 45px;
+    }
+    
+    .game-cover {
+        width: 120px;
+    }
+    
+    .game-article table td {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .player-controls button {
+        font-size: 10px;
+        padding: 3px 6px;
+        margin: 1px;
+    }
+    
+    .volume-control input[type="range"] {
+        width: 80px;
+    }
+}
+
+/* Print styles */
+@media print {
+    .navigation, .player-controls, .social-section, .volume-control {
+        display: none;
+    }
+    
+    body {
+        background: white;
+        color: black;
+    }
+    
+    .content-box {
+        border: 1px solid black;
+        background: white;
+    }
+}
+
+/* Special effects for music player */
+.cd-disc:hover {
+    box-shadow: 2px 2px 12px rgba(0, 0, 255, 0.3);
+}
+
+.playlist-table a:hover {
+    background-color: #FFFF99;
+    padding: 2px 4px;
+    border-radius: 2px;
+}
+
+/* Retro blink effect class (if needed) */
+.blink {
+    animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
